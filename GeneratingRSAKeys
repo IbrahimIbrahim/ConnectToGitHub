@@ -24,7 +24,7 @@ Generating RSA Keys Locally (i.e., the client)
       $ eval "$(ssh-agent -s)"
     # starts the ssh-agent in the background.
       
-      $ ssh-add ~/.ssh/id_rsa
+      $ ssh-add mylocalgit
     # Adds your generated SSH key to the ssh-agent.
     
     
