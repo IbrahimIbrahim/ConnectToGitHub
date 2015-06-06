@@ -26,4 +26,16 @@ Generating RSA Keys Locally (i.e., the client)
       $ ssh-add mylocalgit
     # Adds your generated SSH key to the ssh-agent.
     
+5) Add your SSH key to your account:
+    # Using a text editor, open the ~/.ssh/id_rsa.pub (or as in our case here /mylocalgit.pub) file.
+    # Select the entire contents of the file and copy it to your clipboard.
+    # Paste your key into the "Key" field in your GitHub account. 
+    
+6) Test the conncetion:
+      $ ssh -T git@github.com
+    # Verify the fingerprint you receive, it should be:
+    # RSA key fingerprint: 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
+    # You can also be more assured whether if the username in the message is yours, 
+    # if yes, then you've successfully set up your SSH key!
+    
     
