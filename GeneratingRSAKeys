@@ -3,7 +3,6 @@ Generating RSA Keys Locally (i.e., the client)
 1) Type in the command line:
       $ mkdir ~/.ssh
       $ chmod 700 ~/.ssh
-      $ ssh-keygen -t rsa
     # Creates a directort for RSA Keys.
 
       $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
