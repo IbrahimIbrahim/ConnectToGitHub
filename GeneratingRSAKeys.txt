@@ -49,6 +49,28 @@
       $ git remote set-url origin git@github.com:IbrahimIbrahim/ConnectToGitHubUsingSSH.git
     # Changes your remote's URL from HTTPS to SSH or simply set a new remote in case none existed before:
       $ git remote add origin git@github.com:IbrahimIbrahim/ConnectToGitHubUsingSSH.git
+    # notice that "IbrahimIbrahim" is my own account's name on gitHub, you need to modify this to your own account!
 
-    
-    
+8) Create a local clone of the project you want to fork on GitHub
+    # On GitHub, create your fork, then navigate to your local git directory and type:
+      $ git clone git@github.com:IbrahimIbrahim/DataScienceSpCourseNotes.git
+	
+9) Configure Git to sync your fork with the original DataScienceSpCourseNotes repository
+    # You will notice that using the command "git remote -v" will not show you an upstream to this project, hence, you need to add it yourself:
+      $ git remote add upstream git@github.com:IbrahimIbrahim/DataScienceSpCourseNotes.git
+    # By typing, "git remote -v", the upstream will show up among the other remotes.
+
+10) Syncing the fork:
+      $ git fetch upstream
+    # Fetches the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master.
+
+      $ git checkout master
+    # Checkes-out/Creates your fork's local master branch.
+
+      $ git merge upstream/master
+    # Merges the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
+    # If your local branch didn't have any unique commits, Git will instead perform a "fast-forward".
+    # Syncing your fork only updates your local copy of the repository. To update your fork on GitHub, you must push your changes.
+
+    # We can view all existing branches by typing the following:
+      $ git branch -a
