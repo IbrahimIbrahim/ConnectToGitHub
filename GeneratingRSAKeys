@@ -4,9 +4,27 @@ Generating RSA Keys Locally (i.e., the client)
       $ mkdir ~/.ssh
       $ chmod 700 ~/.ssh
       $ ssh-keygen -t rsa
-    # Creates a directort for RSA Keys
+    # Creates a directort for RSA Keys.
+
       $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-    # Creates a new ssh key, using the provided email as a label
-2) Enter the name of the directory you are creating (i.e., mylocalgit)
-3) Enter the passphrases when prompted.
+    # Creates a new ssh key, using the provided email as a label.
+
+2) Enter the name of the directory you are creating (i.e., mylocalgit).
+
+3) Enter the passphrase when prompted.
     # This passphrase will protect your private key while it's stored on the hard drive.
+    
+      $ ls -al ~/.ssh
+    # Checks for existing SSH keys on your computer and lists the files in your .ssh directory.
+    
+4) Add your key to the ssh-agent:
+    # ssh-agent provides a secure way of storing the private key. For private keys that require a passphrase, 
+    # allows the user to connect multiple times without having to repeatedly type the passphrase.
+      
+      $ eval "$(ssh-agent -s)"
+    # starts the ssh-agent in the background.
+      
+      $ ssh-add ~/.ssh/id_rsa
+    # Adds your generated SSH key to the ssh-agent.
+    
+    
