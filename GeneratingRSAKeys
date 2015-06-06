@@ -35,7 +35,7 @@ Generating RSA Keys Locally (i.e., the client)
       $ ssh -T git@github.com
     # Verify the fingerprint you receive, it should be:
     # RSA key fingerprint: 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
-    # You can also be more assured whether if the username in the message is yours, 
+    # You can also be more assured when the username in the message is yours; 
     # if yes, then you've successfully set up your SSH key!
     
     
