@@ -74,3 +74,17 @@
 
     # We can view all existing branches by typing the following:
       $ git branch -a
+
+11) Pushing changes into GitHub repository:
+    # If you make changes in the directory LearnGit by modifying files or adding new ones
+    # for example then:
+      $ git add ./LearnGit
+      $ git commit -a
+      $ git push origin master
+
+12) Recovering deleted files:
+    # if you mistakenly removed files with:
+      $ git ls-files -z | xargs -0 rm -f
+    # you can recover them using:
+      $ git reset HEAD
+      $ git reset --hard HEAD
