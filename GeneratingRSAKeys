@@ -38,4 +38,17 @@ Generating RSA Keys Locally (i.e., the client)
     # You can also be more assured when the username in the message is yours; 
     # if yes, then you've successfully set up your SSH key!
     
+7) Switch remote URLs from HTTPS to SSH
+      $ mkdir ./localgitrep
+    # Creates the local repository directory. Enter into it! 
+      $ git init
+    # Initialize it.
+      
+      $ git remote -v
+    # Lists your existing remotes in order to get the name of the remote you want to change.
+    
+      $ git remote set-url origin git@github.com:IbrahimIbrahim/ConnectToGitHubUsingSSH.git
+    # Changes your remote's URL from HTTPS to SSH 
+
+    
     
