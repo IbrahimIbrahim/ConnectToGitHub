@@ -1,6 +1,4 @@
-Generating RSA Keys Locally (i.e., the client)
-----------------------------------------------
-1) Type in the command line:
+1) To Generate RSA Keys Locally (i.e., on the client), type in the command line:
       $ mkdir ~/.ssh
       $ chmod 700 ~/.ssh
     # Creates a directory for RSA Keys.
