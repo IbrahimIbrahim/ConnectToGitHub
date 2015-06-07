@@ -98,3 +98,9 @@
     # you can recover them using:
       $ git reset HEAD
       $ git reset --hard HEAD
+
+13) If you receive errors, then probably because either you forgot to initialize the agent, 
+    and hence, you cannot establish communication with GitHub; or if you get the message
+    "Permission denied (publickey)", then this is due to using the sudo command with Git
+    and you shouldn't!
+    
