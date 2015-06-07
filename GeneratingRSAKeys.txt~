@@ -78,7 +78,7 @@
 11) Pushing changes into GitHub repository:
     # If you make changes in the directory LearnGit by modifying files or adding new ones
     # for example then:
-      $ git add -A ./LearnGit
+      $ git add ./LearnGit
       $ git commit -a
       $ git push origin master
 
