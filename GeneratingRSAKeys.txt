@@ -80,7 +80,13 @@
     # for example then:
       $ git add -A ./LearnGit
       $ git commit -a
+
+   or $ git commit -m # This spares you the extra time accessing the file 
+		      # and adding the message inside of it
+    # takes place locally
+
       $ git push origin master
+    # takes place remotely
 
 12) Recovering deleted files:
     # if you mistakenly removed files with:
